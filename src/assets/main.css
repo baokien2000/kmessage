@@ -1,0 +1,14 @@
+@import './base.css';
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --main-theme-color: #0084ff;
+  }
+}
+:root {
+  color-scheme: dark;
+}

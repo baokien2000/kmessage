@@ -1,0 +1,23 @@
+{
+    "files": [],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        },
+        {
+            "path": "./tsconfig.app.json"
+        },
+        {
+            "path": "./tsconfig.vitest.json"
+        }
+    ],
+    "compilerOptions": {
+        "module": "NodeNext",
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": ["./src/components/*", "./src/components/*/index.vue"],
+            "@/views/*": ["./src/views/*", "./src/views/*/index.vue"],
+            "@/*": ["./src/*"]
+        }
+    }
+}
