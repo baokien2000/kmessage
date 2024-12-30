@@ -1,16 +1,16 @@
 <template>
   <label
     :class="['base-input', className]"
-    for="base-input"
     class="flex gap-3 bg-neutral-dark text-title items-center"
   >
     <slot name="icon-left"></slot>
     <input
+   
       class="w-full bg-transparent outline-none"
-      id="base-input"
       v-bind="$attrs"
       :type="type"
       :value="model"
+      :id="props.id"
       @input="updateValue"
     />
     <slot name="icon-right"></slot>
@@ -19,12 +19,16 @@
 
 <script setup lang="ts">
 // Define props for the component
-defineProps({
+const props = defineProps({
   type: {
     type: String,
     default: 'text' // Default type for the input
   },
   className: {
+    type: String,
+    default: ''
+  },
+  id: {
     type: String,
     default: ''
   }

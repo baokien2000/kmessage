@@ -8,5 +8,6 @@
       class="object-cover aspect-square rounded-full"
     />
     <p class="text-title text-base font-medium">Bảo Kiên</p>
+    <span class='text-sm text-des'>Chưa có tin nhắn nào</span>
   </div>
 </template>

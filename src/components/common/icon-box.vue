@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { cn } from '@/utils/cn';
-import { defineProps } from 'vue'
 
 // Định nghĩa các props mặc định
 defineProps({

@@ -12,8 +12,8 @@ const disclosureItems = [
     {
         title: 'Tùy chỉnh đoạn chat',
         buttons: [
-            { icon: 'Colorfilter', text: 'Đổi chủ đề' },
-            { icon: 'Heart', text: 'Thay đổi biểu tượng cảm xúc' },
+            { icon: 'Colorfilter', text: 'Đổi chủ đề' ,color:"var(--main-theme-color)"},
+            { icon: 'Heart', text: 'Thay đổi biểu tượng cảm xúc' , color:"var(--main-theme-color)"},
             { icon: AaIcon, text: 'Chỉnh sửa biệt danh' }
         ]
     },
@@ -56,7 +56,7 @@ const disclosureItems = [
                     <VsxIcon
                         :iconName="button.icon"
                         :size="20"
-                        color="var(--main-theme-color)"
+                        :color="button?.color || '#E2E5E9'"
                         type="bold"
                     />
                 </div>

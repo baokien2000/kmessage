@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import IconBox from '@/components/common/icon-box.vue'
-import type { IUserMessage, ISearchUserMessage, ISearchUser } from '@/interfaces/message'
+import type { IMessage, ISearchUserMessage, ISearchUser } from '@/interfaces/message'
 import type { PropType } from 'vue'
 
 defineProps({

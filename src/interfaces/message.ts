@@ -1,49 +1,55 @@
+import type { IUser } from './auth'
+
 export interface IMessage {
-  id: string
-  content: string
-  time: string
-  isRead: boolean
-  isMyMessage: boolean
+    _id: string
+    content?: string
+    attachment?: string
+    createdAt: string
+    channel: string
+    user: IUser
 }
 
-export interface IUserMessage {
-  id: number
-  name: string
-  avatar: string
-  messages: IMessage[]
-  lastMessage?: IMessage
-  isActive: boolean
+export interface IChannel {
+    _id: string
+    name: string
+    avatar: string
+    lastMessage?: IMessage
+    members: any[]
+    unread: string[]
+    isActive: boolean
+    createdAt: string
+    updatedAt: string
 }
 
 export interface ISearchUser {
-  id: number
-  name: string
-  avatar: string
+    id: number
+    name: string
+    avatar: string
 }
 
 export interface ISearchUserMessage {
-  id: number
-  name: string
-  avatar: string
-  message: {
-    id: string
-    content: string
-    time: string
-    isMyMessage: boolean
-  }
-  resultCount: number
+    id: number
+    name: string
+    avatar: string
+    message: {
+        id: string
+        content: string
+        time: string
+        isMyMessage: boolean
+    }
+    resultCount: number
 }
 
 export interface IMessageGroup {
-  id: number
-  avatar: string
-  isMyMessage: boolean
-  messages: IMessage[]
-  time: string
+    id: number
+    avatar: string
+    isMyMessage: boolean
+    messages: IMessage[]
+    time: string
 }
 
 export interface IMessageList {
-  messagesGroup: IMessageGroup[]
-  totalMessages: number
-  lastMessage: IMessage
+    messagesGroup: IMessageGroup[]
+    totalMessages: number
+    lastMessage: IMessage
 }

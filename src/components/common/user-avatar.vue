@@ -7,7 +7,7 @@ defineProps<{
 </script>
 <template>
   <img
-    :src="url"
+    :src="url || `/src/assets/kmessage-icon.png`"
     alt="user avatar"
     :height="size"
     :width="size"

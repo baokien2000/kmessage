@@ -37,13 +37,12 @@ const onLogout = async () => {
         leave-to-class="transform scale-95 opacity-0"
       >
         <MenuItems
-          class="absolute right-0 mt-2 rounded-lg text-white w-56 origin-top-right ounded-md bg-neutral-dark shadow-lg ring-1 ring-black/5 focus:outline-none"
+          class="absolute right-0 mt-2 p-1.5 rounded-lg text-title w-56 origin-top-right ounded-md bg-main  ring-1 ring-black/5 focus:outline-none custom-shadow drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5)) shadow-[0_0_12px_4px_rgba(0,0,0,0.3)]"
         >
-          <div class="px-1 py-1">
             <MenuItem v-slot="{ active }">
               <button
                 :class="[
-                  active ? 'bg-main text-white' : 'text-des',
+                  active ? 'bg-neutral-dark ' : '',
                   'group flex  gap-2 font-semibold w-full items-center rounded-md px-2 py-2 text-sm',
                 ]"
                 :disabled="loading !== 'idle'"
@@ -53,12 +52,10 @@ const onLogout = async () => {
                 Info
               </button>
             </MenuItem>
-          </div>
-          <div class="px-1 py-1">
             <MenuItem v-slot="{ active }">
               <button
                 :class="[
-                  active ? 'bg-main text-white' : 'text-des',
+                  active ? 'bg-neutral-dark ' : '',
                   'group flex w-full gap-2 font-semibold items-center rounded-md px-2 py-2 text-sm',
                 ]"
                 @click="onLogout"
@@ -70,7 +67,6 @@ const onLogout = async () => {
                 Log out
               </button>
             </MenuItem>
-          </div>
         </MenuItems>
       </transition>
     </Menu>

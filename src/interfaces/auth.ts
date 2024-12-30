@@ -6,10 +6,11 @@ export type IFormTab =
     | 'create-account'
     | 'sign-up-otp'
 
-export interface IMe {
-    _id: number | null
+export interface IUser {
+    _id: string | null
     name: string
     email: string
     updatedAt: string
     createdAt: string
+    avatar: string
 }

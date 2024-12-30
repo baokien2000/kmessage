@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import ArrowUpIcon from '@/icons/arrow-up-icon.vue';
-import PinIcon from '@/icons/pin-icon.vue';
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-} from '@headlessui/vue'
-import { defineProps } from 'vue'
+} from '@headlessui/vue';
 
 defineProps<{
  buttonName: string

@@ -3,23 +3,27 @@ import BasePopover from '@/components/common/base-popover.vue'
 import IconBox from '@/components/common/icon-box.vue'
 
 const menuItems = [
-  { iconName: 'Setting2', text: 'Preferences' },
+  { iconName: 'MessageNotif', text: 'Mask as unread' },
   { divider: true },
-  { iconName: 'Messages3', text: 'Message requests' },
-  { iconName: 'ArchiveBox', text: 'Archived chats' },
-  { iconName: 'MessageRemove', text: 'Restricted accounts' },
+  { iconName: 'Notification', text: 'Mute notifications' },
+  { iconName: 'UserSquare', text: 'View profile' },
   { divider: true },
-  { iconName: 'SecuritySafe', text: 'Privacy & safety', hasArrow: true },
+  { iconName: 'Call', text: 'Audio call' },
+  { iconName: 'Video', text: 'Video call' },
   { divider: true },
-  { iconName: 'MessageQuestion', text: 'Help' }
+  { iconName: 'UserMinus', text: 'Block' },
+  { iconName: 'Archive', text: 'Archive chat' },
+  { iconName: 'MessageRemove', text: 'Delete chat' },
+  { iconName: 'Information', text: 'Report' }
 ]
 </script>
 
 <template>
-  <BasePopover>
+  <BasePopover PopoverPanelClass="" >
     <template v-slot:button>
-      <IconBox class="ml-auto">
-        <VsxIcon iconName="More" :size="24" color="#E2E5E9" type="linear" />
+      <IconBox
+      class="absolute invisible hover:bg-[#4F5052] border border-[#333535] group-hover:visible top-1/2 -translate-y-1/2 right-8 transform"
+    >        <VsxIcon iconName="More" :size="24" color="#E2E5E9" type="linear" />
       </IconBox>
     </template>
     <template v-slot:content>
@@ -30,16 +34,10 @@ const menuItems = [
             v-else
             class="flex items-center gap-2.5 rounded-md p-1.5 text-title hover:bg-neutral-dark"
           >
-            <VsxIcon :iconName="item.iconName" :size="20" color="#E2E5E9" type="linear" />
+            <div class="size-5">
+              <VsxIcon :iconName="item.iconName" :size="20" color="#E2E5E9" type="linear" />
+            </div>
             <p class="font-semibold">{{ item.text }}</p>
-            <VsxIcon
-              v-if="item.hasArrow"
-              class="ml-auto"
-              iconName="ArrowRight2"
-              :size="16"
-              color="#E2E5E9"
-              type="linear"
-            />
           </button>
         </template>
       </div>

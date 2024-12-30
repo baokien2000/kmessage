@@ -13,7 +13,7 @@ defineProps<{
     <div
       :class="[
         cn(
-          'px-3 py-2 inline-block w-fit rounded-[20px] max-w-[600px]',
+          'px-3 py-1.5 inline-block w-fit rounded-[16px] max-w-[600px]',
           isMyMessage ? 'bg-main-theme-color text-white' : 'bg-neutral-dark text-title',
           className
         )

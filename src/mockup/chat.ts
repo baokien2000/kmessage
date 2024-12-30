@@ -1,571 +1,801 @@
 export const UserMessageListMockup = [
-  {
-    id: 1,
-    name: 'Bảo kiên',
-    messages: [
-      {
-        id: 'message-1',
-        content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-        time: '12:00',
-        isRead: true,
-        isMyMessage: true
-      }
-    ],
-    isActive: true,
-    lastMessage: {
-      id: 'message-1',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: true,
-      isMyMessage: true
+    {
+        _id: '674599e6b7162541247145c3',
+        name: 'Bảo kiên',
+        messages: [
+            {
+                _id: 'message-1',
+                content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+                createdAt: '12:00',
+                channel:"674599e6b7162541247145c3",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            }
+        ],
+        isActive: true,
+        lastMessage: {
+            _id: 'message-1',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            
+        },
+        createdAt: 'Hoạt động 1 phút trước',
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 2,
-    name: 'Nguyễn Văn B',
-    messages: [
-      {
-        id: 'message-2',
-        content: 'Hi',
-        time: '12:00',
-        isRead: false,
-        isMyMessage: true
-      }
-    ],
-    isActive: true,
-    lastMessage: {
-      id: 'message-2',
-      content: 'Hello',
-      time: '12:00',
-      isRead: true,
-      isMyMessage: true
+    {
+        _id: 2,
+        name: 'Nguyễn Văn B',
+        messages: [
+            {
+                _id: 'message-2',
+                content: 'Hi',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                isRead: false,
+                
+            }
+        ],
+        isActive: true,
+        lastMessage: {
+            _id: 'message-2',
+            content: 'Hello',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            
+        },
+        createdAt: 'Hoạt động 30 phút trước',
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 3,
-    name: 'Trần Thị C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
-    },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 3,
+        name: 'Trần Thị C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 4,
-    name: 'Võ Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 4,
+        name: 'Võ Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 5,
-    name: 'Bành C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 5,
+        name: 'Bành C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 6,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 6,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 7,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 7,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 8,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 8,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 9,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 9,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 10,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 10,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 11,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 11,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 12,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 12,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  },
-  {
-    id: 13,
-    name: 'Nguyễn Văn C',
-    messages: [
-      {
-        id: 'message-3',
-        content: 'Hi',
-        time: '16:00',
-        isRead: false,
-        isMyMessage: false
-      }
-    ],
-    lastMessage: {
-      id: 'message-3',
-      content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-      time: '12:00',
-      isRead: false,
-      isMyMessage: false
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
     },
-    time: '12:00',
-    isActive: false,
+    {
+        _id: 13,
+        name: 'Nguyễn Văn C',
+        messages: [
+            {
+                _id: 'message-3',
+                content: 'Hi',
+                createdAt: '16:00',
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        lastMessage: {
+            _id: 'message-3',
+            content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isRead: false,
+            isMyMessage: false
+        },
+        createdAt: 'Hoạt động 12 phút trước',
+        isActive: false,
 
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-  }
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+    }
 ]
 
 export const SearchUserListMockup = {
-  friend: [
-    {
-      id: 1,
-      name: 'Bảo kiên',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 2,
-      name: 'Nguyễn Văn B',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 3,
-      name: 'Trần Thị C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 4,
-      name: 'Võ Văn C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 5,
-      name: 'Bành C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 6,
-      name: 'Nguyễn Văn C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 7,
-      name: 'Nguyễn Văn C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 8,
-      name: 'Nguyễn Văn C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 9,
-      name: 'Nguyễn Văn C',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    }
-  ],
-  orther: [
-    {
-      id: 10,
-      name: 'Kiên Bảo',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 11,
-      name: 'Nguyễn Văn 1',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 12,
-      name: 'Nguyễn Văn 2',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    },
-    {
-      id: 13,
-      name: 'Nguyễn Văn 3',
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
-    }
-  ]
+    friend: [
+        {
+            _id: 1,
+            name: 'Bảo kiên',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 2,
+            name: 'Nguyễn Văn B',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 3,
+            name: 'Trần Thị C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 4,
+            name: 'Võ Văn C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 5,
+            name: 'Bành C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 6,
+            name: 'Nguyễn Văn C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 7,
+            name: 'Nguyễn Văn C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 8,
+            name: 'Nguyễn Văn C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 9,
+            name: 'Nguyễn Văn C',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        }
+    ],
+    orther: [
+        {
+            _id: 10,
+            name: 'Kiên Bảo',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 11,
+            name: 'Nguyễn Văn 1',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 12,
+            name: 'Nguyễn Văn 2',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        },
+        {
+            _id: 13,
+            name: 'Nguyễn Văn 3',
+            avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp'
+        }
+    ]
 }
 
 export const SearchMessageListMockup = [
-  {
-    id: 1,
-    name: 'Bảo kiên',
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-    message: {
-      id: 'message-1',
-      content: 'Hello Bảo Kiên',
-      time: '12:00',
-      isMyMessage: true
+    {
+        _id: 1,
+        name: 'Bảo kiên',
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+        message: {
+            _id: 'message-1',
+            content: 'Hello Bảo Kiên',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            
+        },
+        resultCount: 1
     },
-    resultCount: 1
-  },
-  {
-    id: 2,
-    name: 'Nguyễn Văn B',
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-    message: {
-      id: 'message-1',
-      content: 'Hello Nguyễn Văn B',
-      time: '12:00',
-      isMyMessage: false
+    {
+        _id: 2,
+        name: 'Nguyễn Văn B',
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+        message: {
+            _id: 'message-1',
+            content: 'Hello Nguyễn Văn B',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isMyMessage: false
+        },
+        resultCount: 4
     },
-    resultCount: 4
-  },
-  {
-    id: 3,
-    name: 'Trần Thị C',
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-    message: {
-      id: 'message-1',
-      content: 'Hello Trần Thị C',
-      time: '12:00',
-      isMyMessage: false
+    {
+        _id: 3,
+        name: 'Trần Thị C',
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+        message: {
+            _id: 'message-1',
+            content: 'Hello Trần Thị C',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isMyMessage: false
+        },
+        resultCount: 2
     },
-    resultCount: 2
-  },
-  {
-    id: 4,
-    name: 'Võ Văn C',
-    avatar:
-      'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-    message: {
-      id: 'message-1',
-      content: 'Hello Võ Văn C',
-      time: '12:00',
-      isMyMessage: false
-    },
-    resultCount: 3
-  }
+    {
+        _id: 4,
+        name: 'Võ Văn C',
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+        message: {
+            _id: 'message-1',
+            content: 'Hello Võ Văn C',
+            createdAt: '12:00',
+            channel:"123",
+            user:{
+              __id:"any",
+              name:"1",
+              email:"3",
+              avatar:"",
+              createdAt:"",
+              updatedAt:"",
+              
+            },
+            isMyMessage: false
+        },
+        resultCount: 3
+    }
 ]
 
-export const MessageListMockup = {
-  messagesGroup: [
+export const MessageListMockup = [
     {
-      id: 1,
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-      isMyMessage: true,
-      messages: [
-        {
-          id: 'message-1',
-          content: 'Bạn có thể đặt tên component là MessageGroup hoặc ChatBubbleGroup, bởi vì:',
-          time: '12:00',
-          isRead: true,
-          isMyMessage: true
-        },
-        {
-          id: 'message-2',
-          content:
-            'MessageGroup: Tên này gợi ý rằng component sẽ nhóm các tin nhắn cùng thời gian lại với nhau, phù hợp với ý tưởng của bạn.',
-          time: '12:00',
-          isRead: true,
-          isMyMessage: true
-        },
-        {
-          id: 'message-3',
-          content: 'Ảnh đẹp thiên nhiên:',
-          time: '12:00',
-          isRead: true,
-          isMyMessage: true
-        }
-      ],
-      time: '19:13 18 Tháng 10, 2024'
+        _id: 1,
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+       isMyMessage: true,
+        messages: [
+            {
+                _id: 'message-1',
+                content:
+                    'Bạn có thể đặt tên component là MessageGroup hoặc ChatBubbleGroup, bởi vì:',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            },
+            {
+                _id: 'message-2',
+                content:
+                    'MessageGroup: Tên này gợi ý rằng component sẽ nhóm các tin nhắn cùng thời gian lại với nhau, phù hợp với ý tưởng của bạn.',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            },
+            {
+                _id: 'message-3',
+                content: 'Ảnh đẹp thiên nhiên:',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            }
+        ],
+        createdAt: '19:13 18 Tháng 10, 2024'
     },
     {
-      id: 11,
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-      isMyMessage: false,
-      messages: [
-        {
-          id: 'message-11',
-          content: 'Bạn có thể đặt tên component là MessageGroup hoặc ChatBubbleGroup, bởi vì:',
-          time: '12:00',
-          isRead: false,
-          isMyMessage: false
-        },
-        {
-          id: 'message-21',
-          content:
-            'MessageGroup: Tên này gợi ý rằng component sẽ nhóm các tin nhắn cùng thời gian lại với nhau, phù hợp với ý tưởng của bạn.',
-          time: '12:00',
-          isRead: false,
-          isMyMessage: false
-        },
-        {
-          id: 'message-31',
-          content: 'Ảnh đẹp thiên nhiên:',
-          time: '12:00',
-          isRead: false,
-          isMyMessage: false
-        }
-      ],
-      time: '19:13 18 Tháng 10, 2024'
+        _id: 11,
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+        isMyMessage: false,
+        messages: [
+            {
+                _id: 'message-11',
+                content:
+                    'Bạn có thể đặt tên component là MessageGroup hoặc ChatBubbleGroup, bởi vì:',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                isRead: false,
+                isMyMessage: false
+            },
+            {
+                _id: 'message-21',
+                content:
+                    'MessageGroup: Tên này gợi ý rằng component sẽ nhóm các tin nhắn cùng thời gian lại với nhau, phù hợp với ý tưởng của bạn.',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                isRead: false,
+                isMyMessage: false
+            },
+            {
+                _id: 'message-31',
+                content: 'Ảnh đẹp thiên nhiên:',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                isRead: false,
+                isMyMessage: false
+            }
+        ],
+        createdAt: '19:13 18 Tháng 10, 2024'
     },
     {
-      id: 1,
-      avatar:
-        'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
-      isMyMessage: true,
-      messages: [
-        {
-          id: 'message-1',
-          content: 'Bạn có thể đặt tên component là MessageGroup hoặc ChatBubbleGroup, bởi vì:',
-          time: '12:00',
-          isRead: true,
-          isMyMessage: true
-        },
-        {
-          id: 'message-2',
-          content:
-            'MessageGroup: Tên này gợi ý rằng component sẽ nhóm các tin nhắn cùng thời gian lại với nhau, phù hợp với ý tưởng của bạn.',
-          time: '12:00',
-          isRead: true,
-          isMyMessage: true
-        },
-        {
-          id: 'message-3',
-          content: 'Ảnh đẹp thiên nhiên:',
-          time: '12:00',
-          isRead: true,
-          isMyMessage: true
-        }
-      ],
-      time: '10 phút trước'
+        _id: 1,
+        avatar: 'https://hoanghamobile.com/tin-tuc/wp-content/webp-express/webp-images/uploads/2023/07/anh-dep-thien-nhien-thump-1024x536.jpg.webp',
+        messages: [
+            {
+                _id: 'message-1',
+                content:
+                    'Bạn có thể đặt tên component là MessageGroup hoặc ChatBubbleGroup, bởi vì:',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            },
+            {
+                _id: 'message-2',
+                content:
+                    'MessageGroup: Tên này gợi ý rằng component sẽ nhóm các tin nhắn cùng thời gian lại với nhau, phù hợp với ý tưởng của bạn.',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            },
+            {
+                _id: 'message-3',
+                content: 'Ảnh đẹp thiên nhiên:',
+                createdAt: '12:00',
+                channel:"123",
+                user:{
+                  __id:"any",
+                  name:"1",
+                  email:"3",
+                  avatar:"",
+                  createdAt:"",
+                  updatedAt:"",
+                  
+                },
+                
+            }
+        ],
+        createdAt: '10 phút trước'
     }
-  ],
-  totalMessages: 10,
-  lastMessage: {
-    id: 'message-1',
-    content: 'Ảnh đẹp thiên nhiên: Tổng hợp những bức ảnh ấn tượng nhất',
-    time: '12:00',
-    isRead: true,
-    isMyMessage: true
-  }
-}
+]
